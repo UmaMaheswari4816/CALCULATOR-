@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.b{
+			background-color:skyblue;
+			
+			padding: 15x 13x;
+			text-align: center;
+			font-size: 20px;
+		}
+		.t{
+			font-size: 25x;
+		}
+		.c{
+			
+			color: red;
+		}
+	
+	</style>
+	<script type="text/javascript">
+		function show(input){
+			document.getElementById('res').value+=input;
+		}
+		function calc(){
+			var output =eval(document.getElementById('res').value);
+			document.getElementById('res').value=output;
+		}
+		function ac(){
+			document.getElementById('res').value="";
+		}
+
+	</script>
+
+</head>
+<body bgcolor="pink">
+	<div align="center" id="div">
+	<caption><h1 class="c">Calculator</h1></caption>
+	<table border="1" cellspacing="5x" cellpadding="5x" bgcolor="blue">
+		<tr><td colspan="3" align="center" bgcolor="black"><input type="text" id="res" class="t"></td><td align="center"><button onclick="ac()" class="b">AC</button></td></tr>
+		<tr><td align="center"><button onclick="show('1')" class="b">1</button></td><td align="center"><button onclick="show('2')" class="b">2</button></td><td align="center"><button onclick="show('3')" class="b">3</button></td><td align="center"><button onclick="show('+')" class="b">+</button></td></tr>
+		<tr><td align="center"><button onclick="show('4')" class="b">4</button></td><td align="center"><button onclick="show('5')" class="b">5</button></td><td align="center"><button onclick="show('6')" class="b">6</button></td><td align="center"><button onclick="show('-')" class="b">-</button></td></tr>
+		<tr><td align="center"><button onclick="show('7')" class="b">7</button></td><td align="center"><button onclick="show('8')" class="b">8</button></td><td align="center"> <button onclick="show('9')" class="b">9</button></td><td align="center"><button onclick="show('*')" class="b">*</button></td></tr>
+		<tr><td align="center"><button onclick="show('0')" class="b">0</button></td><td align="center"><button onclick="show('%')" class="b">%</button></td><td align="center"><button onclick="show('/')" class="b">/</button></td><td align="center"><button onclick="calc()" class="b">=</button></td></tr>
+	</table>
+</div>
+	
+</body>
+</html>
